@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+  <html data-theme="superburst"></html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="navbar bg-base-100 w-full shadow-sm flex justify-between">
+          <div class="w-10 rounded-full overflow-hidden">
+            <img
+              alt="Tailwind CSS Navbar component"
+              src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"
+            />
+          </div>
+          <a class="btn btn-ghost text-xl text-center">Hello. Sandra</a>
+          <i class="ri-search-line text-2xl"></i>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="hero w-full mt-10 md:mt-40">
+        <div class="card bg-primary text-primary-content w-96">
+          <div class="card-body p-5">
+            <h2 class="card-title text-2xl font-bold tracking-wide text-black">
+              Daily <br />Challange
+            </h2>
+            <p class="text-[10px] text-black opacity-90">
+              Do Your Plans Before 9:00 pm
+            </p>
+            <div class="avatar-group -space-x-6 w-25 relative">
+              <div class="avatar border-transparent">
+                <div class="w-12">
+                  <img
+                    src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"
+                  />
+                </div>
+              </div>
+              <div class="avatar border-transparent">
+                <div class="w-10">
+                  <img
+                    src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"
+                  />
+                </div>
+              </div>
+              <div class="avatar border-transparent">
+                <div class="w-12">
+                  <img
+                    src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"
+                  />
+                </div>
+              </div>
+              <div class="avatar avatar-placeholder border-transparent">
+                <div class="bg-neutral opacity-50 text-neutral-content w-12">
+                  <span>+4</span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="card-actions absolute -right-5 top-[-20%] overflow-x-clip"
+            >
+              <img
+                class="w-[196px] clip overflow-hidden"
+                src="/asset/cartoon-man Background Removed.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <section class="calender">
+      <div class="flex justify-center mt-10">
+        <div class="w-full max-w-xs">
+          <input
+            type="range"
+            min="0"
+            max="100"
+            value="25"
+            class="range"
+            step="25"
+          />
+          <div class="flex justify-between px-2.5 mt-2 text-xs">
+            <span>|</span>
+            <span>|</span>
+            <span>|</span>
+            <span>|</span>
+            <span>|</span>
+          </div>
+          <div class="flex justify-between px-2.5 mt-2 text-xs">
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>5</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="plan">
+      <div class="flex items-center justify-between p-10">
+        <div>
+          <h1 class="text-2xl font-bold">Your Plan</h1>
+        </div>
+        <div
+          class="radial-progress text-primary"
+          style="--value: 48"
+          aria-valuenow="48"
+          role="progressbar"
+        >
+          48%
+        </div>
+      </div>
+    </section>
+
+    <section class="mx-auto md:w-[50%] md:h-[100%] h-full p-10">
+      <div class="grid grid-cols-6 grid-rows-4 gap-4 h-[40%]">
+        <div class="row-span-4 col-span-3 rounded-2xl overflow-hidden">
+          <div class="bg-[#FFBE5B] p-3 h-[100%] flex flex-col gap-20">
+            <div>
+              <h3
+                class="bg-[#FCD18B] w-fit px-4 py-2 font-bold rounded-2xl justify-between"
+              >
+                Medium
+              </h3>
+              <h2 class="text-2xl font-semibold">Yoga Group</h2>
+              <p>25 feb.</p>
+              <p>2:00 - 3:00</p>
+              <p>A5 room</p>
+            </div>
+            <div class="flex gap-4 items-center">
+              <div>
+                <div class="avatar avatar-placeholder">
+                  <div
+                    class="bg-neutral text-neutral-content w-12 rounded-full"
+                  >
+                    <span>sy</span>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <p class="text-[10px]">trainer</p>
+                <h2 class="text-lg">logan paul</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="row-start-4 col-start-4 col-end-7 bg-pink-300 rounded-2xl flex justify-center"
+        >
+          <div class="flex justify-between w-[60%] items-center py-2 text-3xl">
+            <i class="ri-instagram-fill"></i>
+            <i class="ri-youtube-fill"></i>
+            <i class="ri-twitter-fill"></i>
+          </div>
+        </div>
+
+        <div
+          class="row-start-1 row-end-4 col-start-4 col-end-7 bg-[#A7CBFF] rounded-2xl p-6 relative"
+        >
+          <div>
+            <img
+              class="absolute -top-14 -right-7 w-30"
+              src="/asset/1111.png"
+              alt=""
+            />
+            <h3
+              class="bg-[#C4DCFE] w-fit px-4 py-2 font-bold rounded-2xl justify-between"
+            >
+              Medium
+            </h3>
+            <h2 class="text-2xl font-semibold">Balance</h2>
+            <p>25 feb.</p>
+            <p>2:00 - 3:00</p>
+            <p>A5 room</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="p-4 flex justify-center">
+      <ul class="menu menu-horizontal bg-slate-300 rounded-box">
+        <li>
+          <a>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+              />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+              />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+              />
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
