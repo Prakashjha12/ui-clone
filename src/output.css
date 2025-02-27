@@ -3341,8 +3341,14 @@
   .-top-14 {
     top: calc(var(--spacing) * -14);
   }
+  .top-\[-10\%\] {
+    top: -10%;
+  }
   .top-\[-20\%\] {
     top: -20%;
+  }
+  .top-\[-40\%\] {
+    top: -40%;
   }
   .-right-5 {
     right: calc(var(--spacing) * -5);
@@ -4270,6 +4276,9 @@
     &:not(:empty) {
       gap: calc(0.25rem * 4);
     }
+  }
+  .m-6 {
+    margin: calc(var(--spacing) * 6);
   }
   .\!filter {
     display: flex !important;
@@ -5379,6 +5388,12 @@
       font-size: 0.6875rem;
     }
   }
+  .h-0 {
+    height: calc(var(--spacing) * 0);
+  }
+  .h-4 {
+    height: calc(var(--spacing) * 4);
+  }
   .h-5 {
     height: calc(var(--spacing) * 5);
   }
@@ -5540,6 +5555,9 @@
   }
   .w-screen {
     width: 100vw;
+  }
+  .w-xs {
+    width: var(--container-xs);
   }
   .max-w-none {
     max-width: none;
@@ -6059,8 +6077,14 @@
   .justify-items-stretch {
     justify-items: stretch;
   }
+  .gap-2 {
+    gap: calc(var(--spacing) * 2);
+  }
   .gap-4 {
     gap: calc(var(--spacing) * 4);
+  }
+  .gap-6 {
+    gap: calc(var(--spacing) * 6);
   }
   .gap-10 {
     gap: calc(var(--spacing) * 10);
@@ -8843,6 +8867,21 @@
   .transform-view {
     transform-box: view-box;
   }
+  .sm\:block {
+    @media (width >= 40rem) {
+      display: block;
+    }
+  }
+  .sm\:w-xs {
+    @media (width >= 40rem) {
+      width: var(--container-xs);
+    }
+  }
+  .md\:m-0 {
+    @media (width >= 48rem) {
+      margin: calc(var(--spacing) * 0);
+    }
+  }
   .md\:mx-20 {
     @media (width >= 48rem) {
       margin-inline: calc(var(--spacing) * 20);
@@ -8853,6 +8892,16 @@
       margin-top: calc(var(--spacing) * 40);
     }
   }
+  .md\:block {
+    @media (width >= 48rem) {
+      display: block;
+    }
+  }
+  .md\:hidden {
+    @media (width >= 48rem) {
+      display: none;
+    }
+  }
   .md\:h-\[100\%\] {
     @media (width >= 48rem) {
       height: 100%;
@@ -8861,6 +8910,11 @@
   .md\:w-\[50\%\] {
     @media (width >= 48rem) {
       width: 50%;
+    }
+  }
+  .md\:w-xs {
+    @media (width >= 48rem) {
+      width: var(--container-xs);
     }
   }
   .md\:rounded-4xl {
@@ -8881,6 +8935,21 @@
   .md\:px-52 {
     @media (width >= 48rem) {
       padding-inline: calc(var(--spacing) * 52);
+    }
+  }
+  .lg\:block {
+    @media (width >= 64rem) {
+      display: block;
+    }
+  }
+  .lg\:stats-horizontal {
+    @media (width >= 64rem) {
+      grid-auto-flow: column;
+      overflow-x: auto;
+      .stat:not(:last-child) {
+        border-inline-end: var(--border) dashed color-mix(in oklab, currentColor 10%, #0000);
+        border-block-end: none;
+      }
     }
   }
 }
